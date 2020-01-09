@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MSRCOSMOS UI Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+
+<div class="container-fluid" id="div_register">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h3 class="manage_user">Manage Users Dashboard</h3>
+            <p class="message">Note that '*' are important fields.</p>
+            <table class="table table-striped" id="student_table">
+                <tr>
+                    <td>
+                        <form class="student_form" action="" onsubmit="event.preventDefault();" autocomplete="off">
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Student ID<span class="star">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="sid" id="sid" placeholder="Student ID">
+                                    <span id="sid_error"></span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Student Name<span class="star">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="sName" id="sName" placeholder="Student Name">
+                                    <span id="sName_error"></span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Email<span class="star">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="sEmail" id="sEmail" placeholder="Enter Email">
+                                    <span id="sEmail_error"></span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Class<span class="star">*</span></label>
+                                </div>
+                               <div class="col-md-8">
+                                    <input type="text" class="form-control" name="sClass" id="sClass" placeholder="Enter Class">
+                                    <span id="sClass_error"></span>
+                               </div> 
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Enrollment Year<span class="star">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="number" class="form-control" name="eYear" id="eYear" placeholder="Enter Enrollment Year">
+                                    <span id="eYear_error"></span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">City<span class="star">*</span></label>
+                                </div>
+                               <div class="col-md-8">
+                                    <input type="text" class="form-control" name="sCcity" id="sCity" placeholder="Enter City"> 
+                                    <span id="sCcity_error"></span>         
+                               </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label class="form-label">Country<span class="star">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="sCountry" class="form-control" id="sCountry">
+                                        <option value="">Select Country</option>
+                                        <option value="india">India</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                    </select>
+                                    <span id="sCountry_error"></span>
+                                </div>  
+                            </div>
+                            <div class="row form-action-button">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-8" style="float:right;">
+
+                                    <input type="submit" value="Save" id="save" class="sv_btn">
+
+                                    <input type="button" value="Clear" id="clear" onclick="resetForm();" class="clr_btn">
+
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="empList">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Class</th>
+                                    <th>Year</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

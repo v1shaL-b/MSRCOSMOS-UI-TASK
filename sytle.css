@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+
+body {
+    background-image: linear-gradient(
+        to bottom, rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)), 
+        url(bg.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    font: normal 14px Roboto,arial,sans-serif;
+}
+
+.text-center{
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.form-login {
+    max-width: 450px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(124, 126, 134, 0.6);
+    margin: 0 auto 100;
+    padding: 25px;
+    text-align: center;
+}
+
+.message{
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+.message a{
+    color: #4caf50;
+    text-decoration: none;
+}
+#div_login{
+    margin-top: 10%;
+}
+
+.logreg_button{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #4caf50;
+    width: 30%;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logreg_button:hover{
+    background: #43a047;
+}
+
+#div_register{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+.form-control {
+    margin-top:10px;
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+.manage_user{
+    color: #fff;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#userEmail_error, #userPassword_error, #fname_error, #mname_error, #lname_error, #email_error, #mobile_error, #password_error, #confirm_password_error, #sId_error, #sName_error, #sEmail_error, #sClass_error, #sYear_error, #sCity_error, #sCountry_error, #sid_error, #eYear_error, #sCcity_error{
+    color: rgb(245, 17, 17);
+    margin-left: 14px;
+    font-size: 12px;
+}
+#student_table{
+    margin-top: 4.5em;
+    border: none;
+    /* background-color: #EDEDED; */
+    background-color: rgba(124, 126, 134, 0.6);
+}
+
+table th{
+    color: #FFF;
+}
+
+.form-label{
+    padding-top: 20px;
+    color: #FFF;
+}
+.star{
+    color: rgb(245, 17, 17);
+}
+.student_form, #empList{
+    /* background-color: #fff; */
+    background-color: rgba(124, 126, 134, 0.6);
+    padding: 20px;
+    /* color: #000; */
+}
+.sv_btn, .clr_btn{
+    
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #3d9e40;
+    width: 30%;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.clr_btn{
+    background: #bec046;
+}
